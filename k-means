@@ -8,16 +8,6 @@ the term "k-means" was first used by james macqueen in 1967 as part of his paper
 what is k-means?
 clustering is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group than those in other groups. in simple words, the aim is to segregate groups with similar traits and assign them into clusters. the goal of the k-means algorithm is to find groups in the data, with the number of groups represented by the variable k. the algorithm works iteratively to assign each data point to one of k groups based on the features that are provided. in the reference image below, k=2, and there are two clusters identified from the source dataset.
 
-
-
-k-means diagram
-
-reference
-
-the outputs of executing a k-means on a dataset are:
-
-k centroids: centroids for each of the k clusters identified from the dataset.
-complete dataset labeled to ensure each data point is assigned to one of the clusters.
 where can i apply k-means?
 k-means can typically be applied to data that has a smaller number of dimensions, is numeric, and is continuous. think of a scenario in which you want to make groups of similar things from a randomly distributed collection of things; k-means is very suitable for such scenarios.
 
