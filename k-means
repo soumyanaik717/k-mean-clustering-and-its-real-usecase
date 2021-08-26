@@ -1,0 +1,54 @@
+10 Interesting Use Cases for the K-Means Algorithm
+
+the k-means algorithm is one of the oldest and most commonly used clustering algorithms. it is a great starting point for new ml enthusiasts to pick up, given the simplicity of its implementation. as part of this post, we will review the origins of this algorithm and typical usage scenarios.
+
+the history
+the term "k-means" was first used by james macqueen in 1967 as part of his paper on "some methods for classification and analysis of multivariate observations". the standard algorithm was also used in bell labs as part of a technique in pulse code modulation in 1957. it was also published by in 1965 by e. w. forgy and typically is also known as the lloyd-forgy method.
+
+what is k-means?
+clustering is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group than those in other groups. in simple words, the aim is to segregate groups with similar traits and assign them into clusters. the goal of the k-means algorithm is to find groups in the data, with the number of groups represented by the variable k. the algorithm works iteratively to assign each data point to one of k groups based on the features that are provided. in the reference image below, k=2, and there are two clusters identified from the source dataset.
+
+
+
+k-means diagram
+
+reference
+
+the outputs of executing a k-means on a dataset are:
+
+k centroids: centroids for each of the k clusters identified from the dataset.
+complete dataset labeled to ensure each data point is assigned to one of the clusters.
+where can i apply k-means?
+k-means can typically be applied to data that has a smaller number of dimensions, is numeric, and is continuous. think of a scenario in which you want to make groups of similar things from a randomly distributed collection of things; k-means is very suitable for such scenarios.
+
+here is a list of ten interesting use cases for k-means.
+
+1. document classification
+cluster documents in multiple categories based on tags, topics, and the content of the document. this is a very standard classification problem and k-means is a highly suitable algorithm for this purpose. the initial processing of the documents is needed to represent each document as a vector and uses term frequency to identify commonly used terms that help classify the document. the document vectors are then clustered to help identify similarity in document groups. here is a sample implementation of the k-means for document clustering.
+
+2. delivery store optimization
+optimize the process of good delivery using truck drones by using a combination of k-means to find the optimal number of launch locations and a genetic algorithm to solve the truck route as a traveling salesman problem. here is a whitepaper on the same topic .
+
+3. identifying crime localities
+with data related to crimes available in specific localities in a city, the category of crime, the area of the crime, and the association between the two can give quality insight into crime-prone areas within a city or a locality. here is an interesting paper based on crime data from delhi firs.
+
+4. customer segmentation
+clustering helps marketers improve their customer base, work on target areas, and segment customers based on purchase history, interests, or activity monitoring. here is a white paper on how telecom providers can cluster pre-paid customers to identify patterns in terms of money spent in recharging, sending sms, and browsing the internet. the classification would help the company target specific clusters of customers for specific campaigns.
+
+5. fantasy league stat analysis
+analyzing player stats has always been a critical element of the sporting world, and with increasing competition, machine learning has a critical role to play here. as an interesting exercise, if you would like to create a fantasy draft team and like to identify similar players based on player stats, k-means can be a useful option. check out this article for details and a sample implementation.
+
+6. insurance fraud detection
+machine learning has a critical role to play in fraud detection and has numerous applications in automobile, healthcare, and insurance fraud detection. utilizing past historical data on fraudulent claims, it is possible to isolate new claims based on its proximity to clusters that indicate fraudulent patterns. since insurance fraud can potentially have a multi-million dollar impact on a company, the ability to detect frauds is crucial. check out this white paper on using clustering in automobile insurance to detect frauds.
+
+7. rideshare data analysis
+the publicly available uber ride information dataset provides a large amount of valuable data around traffic, transit time, peak pickup localities, and more. analyzing this data is useful not just in the context of uber but also in providing insight into urban traffic patterns and helping us plan for the cities of the future. here is an article with links to a sample dataset and a process for analyzing uber data.
+
+8. cyber-profiling criminals
+cyber-profiling is the process of collecting data from individuals and groups to identify significant co-relations. the idea of cyber profiling is derived from criminal profiles, which provide information on the investigation division to classify the types of criminals who were at the crime scene. here is an interesting white paper on how to cyber-profile users in an academic environment based on user data preferences.
+
+9. call record detail analysis
+a call detail record (cdr) is the information captured by telecom companies during the call, sms, and internet activity of a customer. this information provides greater insights about the customer’s needs when used with customer demographics. in this article , you will understand how you can cluster customer activities for 24 hours by using the unsupervised k-means clustering algorithm. it is used to understand segments of customers with respect to their usage by hours.
+
+10. automatic clustering of it alerts
+large enterprise it infrastructure technology components such as network, storage, or database generate large volumes of alert messages. because alert messages potentially point to operational issues, they must be manually screened for prioritization for downstream processes. clustering of data can provide insight into categories of alerts and mean time to repair, and help in failure predictions.
