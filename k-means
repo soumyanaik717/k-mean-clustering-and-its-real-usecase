@@ -2,7 +2,7 @@
 
 the k-means algorithm is one of the oldest and most commonly used clustering algorithms. it is a great starting point for new ml enthusiasts to pick up, given the simplicity of its implementation. as part of this post, we will review the origins of this algorithm and typical usage scenarios.
 
-the history
+the history:
 the term "k-means" was first used by james macqueen in 1967 as part of his paper on "some methods for classification and analysis of multivariate observations". the standard algorithm was also used in bell labs as part of a technique in pulse code modulation in 1957. it was also published by in 1965 by e. w. forgy and typically is also known as the lloyd-forgy method.
 
 what is k-means?
